@@ -247,61 +247,6 @@ header {
 
 /* FIM OBJETIVO */
 
-/* MISSÃO INÍCIO */
-.missao {
-    padding: 30px;
-    grid-column: 1 / 4;
-    grid-row: 7 / 8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    background-color: #13a89d;
-    color: #fff;
-}
-
-.missao-parte-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 30px;
-    width: 40vw;
-    height: 400px;
-}
-
-.titulo-missao {
-    font-size: 50px;
-    padding: 10px;
-}
-
-.texto-missao {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.titulo-missao-foto {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40vw;
-    height: 400px;
-}
-
-.foto-missao {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-}
-/* MISSÃO FIM */
-
 /* LOCALIZAÇÃO INÍCIO */
 
 .localizacao {
