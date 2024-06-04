@@ -92,7 +92,7 @@ header {
 
 /* CONTEÚDO PRINCIPAL */
 
-.conteudo-principal {
+#conteudo-principal {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
     display: flex;
@@ -126,7 +126,7 @@ header {
     text-align: justify;
 }
 
-.btn-ler-mais {
+#btn-ler-mais {
     transition: 0.5s;
     cursor: pointer;
     padding: 8px;
@@ -139,7 +139,27 @@ header {
     border-radius: 50px;
 }
 
-.btn-ler-mais:hover {
+#btn-ler-mais:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #13a89d;
+    border: 1px solid #13a89d;
+}
+
+#btn-ler-menos {
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 8px;
+    height: 40px;
+    width: 150px;
+    background-color: #13a89d;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+#btn-ler-menos:hover {
     transition: 0.5s;
     background-color: #fff;
     color: #13a89d;
@@ -160,23 +180,27 @@ header {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    border: 1px solid #13a89d; 
 }
 
-.apresentacao-texto-2 {
+#apresentacao-texto-2 {
     display: none;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     width: 80vw;
+    height: 250px;
+    transition: 0.5s;
+    margin: auto;
 }
 
 .texto-apresentacao-2 {
     font-size: 18px;
+    text-align: justify;
+    padding: 10px;
 }
 /* FIM CONTEÚDO PRINCIPAL */
 
 /* INÍCIO BARRA PRINCIPAL */
-.barra-principal {
+#barra-principal {
     grid-column: 1 / 4;
     grid-row: 4 / 5;
     background-color: #13a89d;
@@ -291,14 +315,14 @@ header {
 /* LOCALIZAÇÃO INÍCIO */
 
 .localizacao {
-    margin-top: 50px;
+    padding: 20px;
     grid-column: 1 / 4;
     grid-row: 8 / 9;
-    display: grid;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #13a89d;
+    display: grid;
 }
 
 .localizacao-menu {
@@ -306,7 +330,7 @@ header {
     grid-row: 1 / 2;
     color: #fff;
     width: 40vw;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -328,10 +352,10 @@ header {
 }
 
 .localizacao-foto {
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
     width: 40vw;
-    height: 400px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,9 +363,17 @@ header {
 
 .foto-localizacao {
     border-radius: 50%;
-    border: 1px solid green;
+    border: 2px solid #fff;
     width: 300px;
     height: 300px;
+}
+
+.video-localizacao {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    width: 80vw;
+    background-color: aqua;
+    border-radius: 10px;
 }
 
 /* LOCALIZAÇÃO FIM */
