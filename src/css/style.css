@@ -290,8 +290,8 @@ header {
 }
 
 .foto-objetivo {
-    border-radius: 50%;
-    width: 300px;
+    border-radius: 20px;
+    width: 400px;
     height: 300px;
 }
 
@@ -360,9 +360,8 @@ header {
 }
 
 .foto-localizacao {
-    border-radius: 50%;
-    border: 2px solid #fff;
-    width: 300px;
+    border-radius: 20px;
+    width: 400px;
     height: 300px;
 }
 
@@ -418,9 +417,8 @@ header {
 }
 
 .imagem-adocao {
-    border-radius: 50%;
-    border: 1px solid #13a89d;
-    width: 300px;
+    border-radius: 15px;
+    width: 400px;
     height: 300px;
 }
 /* ADOÇÃO FIM */
