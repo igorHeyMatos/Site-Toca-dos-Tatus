@@ -100,7 +100,6 @@ header {
     justify-content: center;
     background-color: #fff;
     padding: 30px;
-    height: 500px;
     display: grid;
 }
 
@@ -187,7 +186,6 @@ header {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     width: 80vw;
-    height: 250px;
     transition: 0.5s;
     margin: auto;
 }
@@ -441,10 +439,6 @@ header {
     padding: 30px;
 }
 
-/* .apadrinhamento-fundo {
-    background-color: #13a89d;
-} */
-
 .menu-apadrinhamento {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -694,6 +688,24 @@ footer{
 
 /* RESPONSIVIDADE INÍCIO */
 
+@media screen and (max-width: 1300px){
+    .apresentacao {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 1100px){
+
+    .apresentacao {
+        background-color: #000;
+    }
+
+    .texto-apresentacao-2{
+        font-size: 16px;
+    }
+}
+
+
 @media screen and (max-width: 1080px) {
     body {
       background-color: lightgreen;
@@ -701,14 +713,36 @@ footer{
 
     /* CONTEÚDO PRINCIPAL INÍCIO */
     .apresentacao{
-        width: 50vw;
-        padding: 20px;
+        background-color: red;
+        font-size: 16px;
     }
-    .foto-apresentacao {
-        width: 50vw;
-        padding: 20px;
+
+    .titulo-apresentacao {
+        font-size: 40px;
     }
-    /* CONTEÚDO PRINCIPAL FIM */
+
+    .texto-apresentacao {
+        font-size: 15px;
+    }
+
+    #btn-ler-mais {
+        padding: 5px;
+        height: 30px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .texto-apresentacao-2{
+        font-size: 15px;
+    }
+
+    #btn-ler-menos {
+        padding: 5px;
+        height: 30px;
+        width: 100px;
+        font-size: 14px;
+    }
+        /* CONTEÚDO PRINCIPAL FIM */
 
   }
 
@@ -729,6 +763,7 @@ footer{
     /* CABEÇALHO INÍCIO */
     .cabecalho {
         flex-direction: column;
+        background-color: blue;
     }
     .links {
         font-size: 14px;
@@ -741,12 +776,15 @@ footer{
     /* CABEÇALHO FIM */
 
     /* CONTEÚDO PRINCIPAL INÍCIO */
-    .titulo-apresentacao{
-        font-size: 45px;
+    .titulo-apresentacao {
+        font-size: 40px;
     }
+
     .texto-apresentacao {
-        font-size: 14px;
+        font-size: 15px;
     }
+
+
     /* CONTEÚDO PRINCIPAL FIM */
 
     /* BARRA PRINCIPAL INÍCIO */
@@ -776,17 +814,27 @@ footer{
     /* CABEÇALHO FIM */
 
     /* CONTEÚDO PRINCIPAL INÍCIO */
+    .apresentacao {
+        height: 300px;
+    }
     .titulo-apresentacao{
         font-size: 35px;
-        padding: 5px;
     }
     .texto-apresentacao {
         font-size: 14px;
-        padding: 5px;
     }
     .foto-apresentacao{
         border: 1px solid black;
-        padding: 10px;
+        height: 300px;
+    }
+    .apresentacao-foto {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .texto-apresentacao-2{
+        font-size: 14px;
     }
     /* CONTEÚDO PRINCIPAL FIM */
 
