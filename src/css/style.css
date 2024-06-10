@@ -321,7 +321,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #13a89d;
+    background: url("/src/img/fundo-gatinhos-img.png");
     display: grid;
 }
 
@@ -378,25 +378,179 @@ header {
 
 /* LOCALIZAÇÃO FIM */
 
-/* redes INÍCIO */
+/* ADOÇÃO INÍCIO */
+.adocao {
+    grid-column: 1 / 4;
+    grid-row: 9 / 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    display: grid;
+    padding: 30px;
+}
+
+.menu-adocao {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: #010101;
+    width: 40vw;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.titulo-adocao {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.texto-adocao {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.menu-imagem-adocao {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 40vw;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-adocao {
+    border-radius: 50%;
+    border: 1px solid #13a89d;
+    width: 300px;
+    height: 300px;
+}
+/* ADOÇÃO FIM */
+
+/* APADRINHAMENTO - INÍCIO */
+
+.apadrinhamento {
+    grid-column: 1 / 4;
+    grid-row: 10 / 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("/src/img/fundo-gatinhos-img.png");
+    display: grid;
+    padding: 30px;
+}
+
+/* .apadrinhamento-fundo {
+    background-color: #13a89d;
+} */
+
+.menu-apadrinhamento {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: #fff;
+    width: 40vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.titulo-apadrinhamento {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.titulos-textos-apadrinhamento {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.texto-apadrinhamento {
+    display: flex;
+    font-size: 18px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.texto2-apadrinhamento {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    font-size: 18px;
+    padding: 10px;
+    width: 80vw;
+    flex-direction: column;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.link-carne {
+    margin-top: 20px;
+    transition: 0.5s;
+    background: #fff;
+    width: 300px;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #13a89d;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.link-carne:hover {
+    transition: 0.5s;
+    color: #fff;
+    background-color: #13a89d;
+    border: 1px solid #fff;
+}
+
+.menu-apadrinhamento-imagem {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 40vw;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apadrinhamento-imagem {
+    border: 1px solid #13a89d;
+    width: 300px;
+    height: 350px;
+}
+
+/* APADRINHAMENTO - FIM */
+
+/* REDES INÍCIO */
 
 .redes {
     grid-column: 1 / 4;
-    grid-row: 9 / 10;
+    grid-row: 11 / 12;
     display: grid;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
-    margin-bottom: 50px;
 }
 
 .redes-cabecalho {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 80vw;
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,7 +558,7 @@ header {
 
 .redes-titulo {
     font-size: 50px;
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .redes-conteudo {
@@ -415,6 +569,7 @@ header {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
+    padding: 20px;
 }
 
 .instagram {
@@ -536,7 +691,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-row: 10 / 11;
+    grid-row: 12 / 13;
     grid-column: 1 / 4;
     background-color: #13a89d;
     height: 50px;
