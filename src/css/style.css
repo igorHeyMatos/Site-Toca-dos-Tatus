@@ -262,7 +262,7 @@ header {
     flex-direction: column;
     font-size: 30px;
     width: 40vw;
-    height: 400px;
+    
 }
 
 .titulo-objetivo {
@@ -286,7 +286,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 40vw;
-    height: 400px;
+    
 }
 
 .foto-objetivo {
@@ -328,7 +328,6 @@ header {
     grid-row: 1 / 2;
     color: #fff;
     width: 40vw;
-    height: 350px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -353,7 +352,6 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     width: 40vw;
-    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -385,7 +383,6 @@ header {
     grid-row: 1 / 2;
     color: #010101;
     width: 40vw;
-    height: 450px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -410,7 +407,6 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     width: 40vw;
-    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,7 +438,6 @@ header {
     grid-row: 1 / 2;
     color: #fff;
     width: 40vw;
-    height: 350px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -504,7 +499,6 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     width: 40vw;
-    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -686,32 +680,35 @@ footer{
 
 /* RESPONSIVIDADE INÍCIO */
 
+@media screen and (max-width: 1320px){
+
+    /* ADOÇÃO INÍCIO */
+    .titulo-adocao {
+        font-size: 30px;
+    }
+    /* ADOÇÃO FIM */
+
+}
+
 @media screen and (max-width: 1300px){
-    .apresentacao {
-        background-color: blue;
+    /* MISSÃO INÍCIO */
+    .titulo-objetivo {
+        font-size: 35px;
     }
+    /* MISSÃO FIM */
+
+    /* ADOÇÃO INÍCIO */
+    .titulo-adocao {
+        font-size: 40px;
+    }
+    /* ADOÇÃO FIM */
 }
-
-@media screen and (max-width: 1100px){
-
-    .apresentacao {
-        background-color: #000;
-    }
-
-    .texto-apresentacao-2{
-        font-size: 16px;
-    }
-}
-
 
 @media screen and (max-width: 1080px) {
-    body {
-      background-color: lightgreen;
-    }
 
     /* CONTEÚDO PRINCIPAL INÍCIO */
     .apresentacao{
-        background-color: red;
+        /* background-color: red; */
         font-size: 16px;
     }
 
@@ -740,7 +737,48 @@ footer{
         width: 100px;
         font-size: 14px;
     }
-        /* CONTEÚDO PRINCIPAL FIM */
+    /* CONTEÚDO PRINCIPAL FIM */
+
+    /* OBJETIVO INÍCIO */
+
+    .objetivo-texto-1 {
+        font-size: 15px;
+    }
+
+    .objetivo-texto-2 {
+        font-size: 15px;
+    }
+
+    .foto-objetivo {
+        width: 300px;
+        height: 250px;
+    }
+
+    /* OBJETIVO FIM */
+
+    /* LOCALIZAÇÃO INÍCIO */
+    .texto-localizacao {
+        font-size: 15px;
+    }
+
+    .foto-localizacao {
+        width: 300px;
+        height: 250px;
+    }
+    /* LOCALIZAÇÃO FIM */
+
+    /* ADOÇÃO INÍCIO */
+    .imagem-adocao {
+        width: 300px;
+        height: 250px;
+    }
+    /* ADOÇÃO FIM */
+
+    /* APADRINHAMENTO INÍCIO */
+    .titulo-apadrinhamento {
+        font-size: 40px;
+    }
+    /* APADRINHAMENTO FIM */
 
   }
 
@@ -749,10 +787,19 @@ footer{
 
     /* CABEÇALHO INÍCIO */
     .links {
-        color: #13a89d;
         padding-right: 10px;
     }
     /* CABEÇALHO FIM */
+
+    /* ADOÇÃO INÍCIO */
+    .titulo-adocao {
+        font-size: 35px;
+    }
+
+    .texto-adocao {
+        font-size: 16px;
+    }
+    /* ADOÇÃO FIM */
 
 }
 
@@ -761,7 +808,6 @@ footer{
     /* CABEÇALHO INÍCIO */
     .cabecalho {
         flex-direction: column;
-        background-color: blue;
     }
     .links {
         font-size: 14px;
@@ -781,8 +827,6 @@ footer{
     .texto-apresentacao {
         font-size: 15px;
     }
-
-
     /* CONTEÚDO PRINCIPAL FIM */
 
     /* BARRA PRINCIPAL INÍCIO */
@@ -795,14 +839,66 @@ footer{
         display: none;
     }
     /* BARRA PRINCIPAL FIM */
+
+    /* OBJETIVO INÍCIO */
+
+    .titulo-objetivo {
+        font-size: 30px;
+    }
+
+    /* OBJETIVO FIM */
+
+    /* LOCALIZAÇÃO INÍCIO */
+    .localizacao-titulo {
+        font-size: 40px;
+    }
+    /* LOCALIZAÇÃO FIM */
+
+    /* ADOÇÃO INÍCIO */
+    .titulo-adocao {
+        font-size: 28px;
+    }
+    /* ADOÇÃO FIM */
+
+    /* APADRINHAMENTO INÍCIO */
+    .texto-apadrinhamento {
+        font-size: 16px;
+    }
+
+    .texto2-apadrinhamento {
+        font-size: 16px;
+    }
+    /* APADRINHAMENTO FIM */
+}
+
+@media screen and (max-width: 880px){
+    /* APADRINHAMENTO INÍCIO */
+    .titulo-apadrinhamento {
+        font-size: 35px;
+    }
+
+    .titulos-textos-apadrinhamento {
+        font-size: 25px;
+    }
+
+    .texto-apadrinhamento {
+        font-size: 15px;
+    }
+
+    .texto2-apadrinhamento {
+        font-size: 15px;
+    }
+
+    .apadrinhamento-imagem {
+        width: 250px;
+        height: 350px;
+    }
+    /* APADRINHAMENTO FIM */
 }
 
 @media screen and (max-width: 820px){
 
     /* CABEÇALHO INÍCIO */
-    .cabecalho {
-        background-color: red;
-    }
     .logo {
         width: 40vw;
         display: flex;
@@ -822,7 +918,6 @@ footer{
         font-size: 14px;
     }
     .foto-apresentacao{
-        border: 1px solid black;
         height: 300px;
     }
     .apresentacao-foto {
@@ -856,14 +951,161 @@ footer{
 
     /* BARRA PRINCIPAL FIM */
 
+    /* OBJETIVO INÍCIO */
+
+    .titulo-objetivo {
+        font-size: 25px;
+    }
+
+    .titulo-objetivo-texto-2 {
+        font-size: 20px;
+    }
+
+    .objetivo-texto-1 {
+        font-size: 14px;
+    }
+
+    .objetivo-texto-2 {
+        font-size: 14px;
+    }
+
+    /* OBJETIVO FIM */
+
+    /* ADOÇÃO INÍCIO */
+    .titulo-adocao {
+        font-size: 24px;
+    }
+
+    .texto-adocao {
+        font-size: 14px;
+    }
+    /* ADOÇÃO FIM */
+
+}
+
+@media screen and (max-width: 750px) {
+
+    /* CONTEÚDO PRINCIPAK INÍCIO */
+    .titulo-apresentacao {
+        font-size: 30px;
+    }
+
+    .texto-apresentacao{
+        font-size: 13px;
+    }
+
+    .texto-apresentacao-2 {
+        font-size: 13px;
+    }
+    /* CONTEÚDO PRINCIPAL FIM */
+
+    /* OBEJTIVO INÍCIO */
+    .foto-objetivo {
+        width: 250px;
+        height: 200px;
+    }
+    /* OBJETIVO FIM */
+
+    /* LOCALIZAÇÃO INÍCIO */
+    .localizacao-menu {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        width: 80vw;
+    }
+
+    .localizacao-foto {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        width: 80vw;
+    }
+
+    .foto-localizacao {
+        width: 570px;
+        height: 350px;
+    }
+    /* LOCALIZAÇÃO FIM */
+
+    /* ADOÇÃO INÍCIO */
+
+    .menu-adocao {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        width: 80vw;
+    }
+
+    .titulo-adocao {
+        font-size: 35px;
+    }
+
+    .texto-adocao {
+        font-size: 14px;
+    }
+
+    .menu-imagem-adocao {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        width: 80vw;
+    }
+
+    .imagem-adocao {
+        width: 570px;
+        height: 350px;
+    }
+
+    /* ADOÇÃO FIM */
+
+    /* APADRINHAMENTO INÍCIO */
+    .menu-apadrinhamento {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 50vw;
+    }
+
+    .texto2-apadrinhamento {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        width: 80vw;
+    }
+
+    .apadrinhamento-imagem {
+        width: 150px;
+        height: 250px;
+        padding-top: 40px;
+    }
+
+    .menu-apadrinhamento-imagem {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        width: 30vw;
+    }
+    /* APADRINHAMENTO FIM */
+}
+
+@media screen and (max-width: 650px){
+
+    /* APADRINHAMENTO INÍCIO */
+    .titulo-apadrinhamento {
+        font-size: 33px;
+    }
+
+    .titulos-textos-apadrinhamento {
+        font-size: 23px;
+    }
+
+    .texto-apadrinhamento {
+        font-size: 14px;
+    }
+
+    .texto2-apadrinhamento {
+        font-size: 14px;
+    }
+    /* APADRINHAMENTO FIM */
+
 }
 
 @media screen and (max-width: 630px){
 
     /* CABEÇALHO INÍCIO */
-    .cabecalho {
-        background-color: blue;
-    }
     .logo{
         width: 50vw;
     }
@@ -877,16 +1119,89 @@ footer{
     /* CABEÇALHO FIM */
 
     /* CONTEÚDO PRINCIPAL INÍCIO */
-    .conteudo-principal{
-        flex-direction: column;
-    }
-    .apresentacao{
+    .apresentacao {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
         width: 80vw;
+        font-size: 13px;
     }
+    
     .foto-apresentacao {
+        width: 120px;
+        height: 290px;
+        align-items: normal;
+    }
+
+    .apresentacao-foto {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    /* CONTEÚDO PRINCIPAL FIM */
+
+    /* OBJETIVO INÍCIO */
+    .objetivo-parte-1 {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
         width: 80vw;
     }
-    /* CONTEÚDO PRINCIPAL FIM */
+
+    .titulo-objetivo {
+        font-size: 35px;
+    }
+
+    .objetivo-foto {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        width: 80vw;
+    }
+
+    .foto-objetivo {
+        width: 400px;
+        height: 250px;
+    }
+
+    .titulo-objetivo-texto-2 {
+        font-size: 23px;
+    }
+
+    .objetivo-texto-2 {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        width: 80vw;
+    }
+    /* OBJETIVO FIM */
+
+    /* LOCALIZAÇÃO INÍCIO */
+    .foto-localizacao {
+        width: 400px;
+        height: 250px;
+    }
+    /* LOCALIZAÇÃO FIM */
+
+    /* ADOÇÃO INÍCIO */
+    .imagem-adocao {
+        width: 400px;
+        height: 250px;
+    }
+    /* ADOÇÃO FIM */
+
+    /* APADRINHAMENTO INÍCIO */
+
+    .menu-apadrinhamento {
+        width: 40vw;
+    }
+
+    .menu-apadrinhamento-imagem {
+        width: 40vw;
+    }
+
+    .apadrinhamento-imagem {
+        width: 150px;
+        height: 250px;
+    }
+    /* APADRINHAMENTO FIM */
 
     /* REDES INÍCIO */
     .redes-conteudo {
